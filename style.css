@@ -138,6 +138,22 @@ audio {
   left: 50%;
   transform: translateX(-50%);
 }
+.audio-wrapper {
+  bottom: 15rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.audio-wrapper audio {
+  position: relative;
+  transform: none;
+  bottom: initial;
+  left: initial;
+}
+.audio-wrapper audio:nth-child(1) {
+  margin-right: 1rem;
+}
 /* h3 {
   position: absolute;
 } */

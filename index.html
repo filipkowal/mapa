@@ -380,7 +380,7 @@
         </div>
         <div class="city-full-title">
           <h1>Agnieszka i Ola</h1>
-          <h3>warszawa</h3>
+          <h3>Warszawa</h3>
         </div>
       </div>
       <div id="chania" class="city-full-wrapper">
@@ -515,7 +515,7 @@
           </audio>
           <div class="city-full-title">
             <h1>Sarah</h1>
-            <h3>Inner mongolia</h3>
+            <h3>Inner Mongolia</h3>
           </div>
         </div>
         <div id="kent" class="city-full-wrapper">
@@ -715,13 +715,20 @@
         console.log(closeButtons)
         closeButtons.forEach(function (button) {
             button.addEventListener('click', function stopAudio() {
-                var audioElements = button.parentElement.querySelectorAll('audio');
+                var audioElements = document.querySelectorAll('audio');
                 console.log(audioElements)
                 audioElements.forEach(function (audioElement) {
                     audioElement.pause();
                     audioElement.currentTime = 0;
                 })
             })
+        })
+
+        document.addEventListener('keydown', function (e) {
+            if (e.keyCode === 27) {
+                var close = document.querySelector('.close');
+                close.click();
+            }
         })
     </script>
   </body>

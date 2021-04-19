@@ -42,6 +42,22 @@ svg {
     width: 1rem;
   }
 }
+.not-alone {
+  position: absolute;
+  bottom: 20%;
+  right: 18%;
+  font-size: 3vw;
+}
+@media (min-width: 1200px) {
+  .not-alone {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 800px) {
+  .not-alone {
+    font-size: 3vw;
+  }
+}
 .warszawa-agnieszka {
   top: 35%;
   left: 51.5%;

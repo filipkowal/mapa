@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "KhmerMn";
-  src: url("./assets/KhmerMN.woff") format("woff"),
-    url("./assets/KhmerMN-Bold-02.ttf") format("truetype");
+  font-family: "Khmer";
+  src: url("./assets/Khmer-Regular.woff") format("woff"),
+    url("./assets/Khmer-Regular.ttf") format("truetype");
 }
 :root {
   --background: #ebe6e2;
-  font-family: "KhmerMN";
+  font-family: "Khmer";
 }
 
 body {
@@ -18,20 +18,16 @@ main {
 .map-wrapper {
   margin-left: auto;
   margin-right: auto;
-  height: 100vh;
   display: inline-block;
-  min-width: 1308px;
   position: relative;
+  max-height: 100vh;
 }
 .map {
-  height: 100vh;
-  /* width: 100%; */
+  max-width: 100%;
+  max-height: 100vh;
   display: block;
-  /* margin-left: auto;
-  margin-right: auto; */
 }
 .city {
-  /* max-height: 14%; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -40,6 +36,11 @@ svg {
   stroke: dimgrey;
   width: 1.5rem;
   fill: var(--background);
+}
+@media (max-width: 800px) {
+  svg {
+    width: 1rem;
+  }
 }
 .warszawa-agnieszka {
   top: 35%;
@@ -58,7 +59,7 @@ svg {
   left: 51%;
 }
 .east-hampton {
-  top: 38%;
+  top: 40%;
   left: 32%;
 }
 .edmonton {
@@ -134,9 +135,11 @@ svg {
 h1 {
   font-size: 3rem;
   margin-bottom: 0;
+  font-weight: 500;
 }
 h3 {
   margin-top: -0.5rem;
+  font-weight: 500;
 }
 audio {
   bottom: 15rem;
@@ -165,4 +168,5 @@ audio {
   top: 3rem;
   right: 3rem;
   transform: scale(1.5);
+  z-index: 3;
 }

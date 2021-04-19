@@ -41,9 +41,13 @@ svg {
   width: 1.5rem;
   fill: var(--background);
 }
-.warszawa {
-  top: 36%;
-  left: 52.5%;
+.warszawa-agnieszka {
+  top: 35%;
+  left: 51.5%;
+}
+.warszawa-ola {
+  top: 37.5%;
+  left: 54%;
 }
 .atlanta {
   top: 47%;
@@ -124,13 +128,15 @@ svg {
 .city-full-title {
   left: 50%;
   transform: translateX(-50%);
-  bottom: 1rem;
+  bottom: 4rem;
   position: absolute;
 }
 h1 {
-  /* bottom: 7rem; */
   font-size: 3rem;
   margin-bottom: 0;
+}
+h3 {
+  margin-top: -0.5rem;
 }
 audio {
   bottom: 15rem;
@@ -154,9 +160,6 @@ audio {
 .audio-wrapper audio:nth-child(1) {
   margin-right: 1rem;
 }
-/* h3 {
-  position: absolute;
-} */
 .close {
   position: absolute;
   top: 3rem;

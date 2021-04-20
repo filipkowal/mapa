@@ -1,9 +1,9 @@
-@font-face {
+/* @font-face {
   font-family: "Khmer";
   src: url("./assets/Khmer-Regular.woff") format("woff"),
     url("./assets/Khmer-Regular.ttf") format("truetype"),
     url("https://fonts.googleapis.com/css2?family=Khmer&display=swap");
-}
+} */
 :root {
   --background: #ebe6e2;
   font-family: "Khmer";
